@@ -52,6 +52,7 @@ The build process based on [LLaVA 1.5](https://github.com/haotian-liu/LLaVA):
 ```bash
 git clone https://github.com/haotian-liu/LLaVA.git
 cd LLaVA
+git clone https://github.com/YiyangZhou/CSR.git
 ```
 
 2. Install Package
@@ -98,6 +99,7 @@ cd ./LLaVA/llava/train
 ```
 
 ## Instruction
+Before starting, you need to modify the path in './CSR/scripts/run_train.sh' to your own path.
 
 ## Data and Models
 
