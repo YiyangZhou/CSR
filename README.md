@@ -87,5 +87,5 @@ cd *your conda path*/envs/csr/lib/python3.10/site-packages/trl/trainer/
 
 
 ## Acknowledgement
-- This repository is built upon [LLaVA](https://github.com/haotian-liu/LLaVA) and [STIC](https://github.com/yihedeng9/STIC) templates!
+- This repository is built upon [LLaVA](https://github.com/haotian-liu/LLaVA)!
 - We thank the [Center for AI Safety](https://www.safe.ai/) for supporting our computing needs. This research was supported by Cisco Faculty Research Award.
