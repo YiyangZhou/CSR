@@ -4,6 +4,7 @@
 <div align="center">
 </div>
 <div align="center">
+    <a href="https://huggingface.co/charlesdj"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face" style="width: 22px;"/></a>
     <a href="https://arxiv.org/pdf/2405.15973"><img src="assets/Paper-Arxiv-orange.svg" ></a>
     <a href="https://x.com/furongh/status/1796373642382577746"><img src='assets/-twitter-blue.svg'></a>
 </div>
