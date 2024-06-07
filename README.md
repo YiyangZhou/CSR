@@ -76,15 +76,30 @@ pip install flash-attn --no-build-isolation
 pip install trl
 ```
 
-5. Modify the TRL library adjust DPO for LVLMs.
+5. Modify the TRL library adjust DPO for LVLMs
 
 ```Shell
 cd *your conda path*/envs/csr/lib/python3.10/site-packages/trl/trainer/
 # Replace dop_trainer.py with dop_trainer.py in the 'train_csr' folder.
 ```
 
+6. Modify the parent class of llava_trainer
+
+```Shell
+cd ./LLaVA/llava/train
+
+# Modify llava_trainer.py as follows:
+
+# from trl import DPOTrainer
+# ...
+# ...
+# ...
+# class LLaVATrainer(DPOTrainer):
+```
+
 ## Instruction
 
+## Data and Models
 
 ## Acknowledgement
 - This repository is built upon [LLaVA](https://github.com/haotian-liu/LLaVA)!
