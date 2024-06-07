@@ -9,7 +9,7 @@
 </div>
 
 
-[[Project page](https://csr.github.io/)]] 
+[[Project page](https://csr.github.io/)]
 
 **Citation**: If you find this repo useful for your research, please consider citing the paper
 ```
@@ -24,7 +24,7 @@
 ```
 
 ## Table of Contents
-- [About CSR](#About CSR)
+- [About CSR](#About-CSR)
 - [Installation](#Installation)
 - [Instruction](#Instruction)
 - [Acknowledgement](#Acknowledgement)
