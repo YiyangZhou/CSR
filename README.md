@@ -112,7 +112,7 @@ Before starting, you need to:
 ### Step 2. Direct Preference Optimization (DPO). 
 
 ```Shell
-bash ./csr_scripts/run_train.sh
+bash ./CSR/scripts/run_train.sh
 ```
 
 ### Step 3. Iterative Learning. 
@@ -123,6 +123,15 @@ python ./scripts/merge_lora_weights.py --model-path "your LoRA checkpoint path" 
 ```
 
 ## Data and Models
+
+## Evaluation
+Here are two convenient ways to perform evaluations:
+
+1. Use the eval scripts provided in [LLaVA](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md).
+   
+3. Utilize [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval), a general evaluation platform.
+
+5. CHAIR metrics in [LURE](https://github.com/YiyangZhou/LURE).
 
 ## Acknowledgement
 - This repository is built upon [LLaVA](https://github.com/haotian-liu/LLaVA)!
