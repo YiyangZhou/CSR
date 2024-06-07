@@ -24,9 +24,9 @@
 ```
 
 ## Table of Contents
-- [About CSR](#-About-CSR)
-- [Installation](#-Installation)
-- [Instruction](#-Instruction)
+- [About CSR](#About CSR)
+- [Installation](#Installation)
+- [Instruction](#Instruction)
 - [Acknowledgement](#Acknowledgement)
 
 ## About CSR
