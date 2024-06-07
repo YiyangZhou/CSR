@@ -49,7 +49,7 @@ The build process based on [LLaVA 1.5](https://github.com/haotian-liu/LLaVA):
 
 1. Clone this repository and navigate to LLaVA folder
 
-```bash
+```Shell
 git clone https://github.com/haotian-liu/LLaVA.git
 cd LLaVA
 git clone https://github.com/YiyangZhou/CSR.git
@@ -66,7 +66,7 @@ pip install -e .
 
 3. Install additional packages for training cases
 
-```
+```Shell
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
@@ -111,7 +111,16 @@ Before starting, you need to:
 
 ### Step 2. Direct Preference Optimization (DPO). 
 
+```Shell
+bash ./csr_scripts/run_train.sh
+```
+
 ### Step 3. Iterative Learning. 
+After completing a round of CSR training, you need to merge the current LoRA checkpoint. Use the merged checkpoint as the base model and proceed with **Step 1** and **Step 2** sequentially.
+
+```Shell
+python ./scripts/merge_lora_weights.py --model-path "your LoRA checkpoint path" --model-base "your llava 1.5 checkpoint path --> your Iter-1 path --> your Iter-2 path ...." --save-model-path "xxx"
+```
 
 ## Data and Models
 
