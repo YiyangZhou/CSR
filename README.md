@@ -108,7 +108,7 @@ Before starting, you need to:
 (3) Download the image data from the [COCO website](https://cocodataset.org/#download) into **'./data/images/'**(or you can prepare your own images and prompt data).
 
 ### Step 1. Construct Preference Data. 
-First, prepare the COCO-2014 train images in the inference_csr/data/images/train2014 directory. Then complete the following steps in sequence.
+First, prepare the COCO-2014 train images in the **'./CSR/inference_csr/data/images/train2014 directory'**. Then complete the following steps in sequence.
 ```Shell
 cd inference_csr
 bash ./step1.sh
@@ -119,7 +119,8 @@ bash ./step2.sh
 ```Shell
 bash ./step3.sh
 ```
-You now have the preference data.
+You now have the preference dataset.
+This process takes a long time. We provide our preference datasets in **'./CSR/inference_csr/CSR-datasets'**.
 
 ### Step 2. Direct Preference Optimization (DPO). 
 
