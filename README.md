@@ -99,7 +99,7 @@ cd ./LLaVA/llava/train
 ```
 
 ## Instruction
-Before starting, you need to modify the path in './CSR/scripts/run_train.sh' to your own path.
+Before starting, you need to modify the path in './CSR/scripts/run_train.sh' to your own path. If you are using wandb, you need to enter your key in './CSR/train_csr/train_dpo_lora.py' by filling in 'wandb.login(key="your key")' with your key. Download the image data from the [COCO website](https://cocodataset.org/#download) into './data/images/'(or you can prepare your own images and prompt data).
 
 ## Data and Models
 
