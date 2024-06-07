@@ -107,6 +107,12 @@ Before starting, you need to:
 
 (3) Download the image data from the [COCO website](https://cocodataset.org/#download) into **'./data/images/'**(or you can prepare your own images and prompt data).
 
+### Step 1. Construct Preference Data. 
+
+### Step 2. Direct Preference Optimization (DPO). 
+
+### Step 3. Iterative Learning. 
+
 ## Data and Models
 
 ## Acknowledgement
