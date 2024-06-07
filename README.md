@@ -111,7 +111,7 @@ Before starting, you need to:
 ### Step 1. Construct Preference Data. 
 First, prepare the COCO-2014 train images in the **'./CSR/inference_csr/data/images/train2014 directory'**. Then complete the following steps in sequence.
 ```Shell
-cd inference_csr
+cd ./CSR/inference_csr
 bash ./step1.sh
 ```
 ```Shell
