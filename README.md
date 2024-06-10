@@ -107,7 +107,7 @@ Before starting, you need to:
 (3) Download the image data from the [COCO website](https://cocodataset.org/#download) into **'./data/images/'**(or you can prepare your own images and prompt data).
 
 ### Step 1. Construct Preference Data. 
-First, prepare the COCO-2014 train images in the **'./CSR/inference_csr/data/images/train2014 directory'**. Then complete the following steps in sequence.
+First, prepare the COCO-2014 train images in the **'./data/images/'**. Then complete the following steps in sequence.
 ```Shell
 cd ./CSR/inference_csr
 bash ./step1.sh
@@ -119,7 +119,7 @@ bash ./step2.sh
 bash ./step3.sh
 ```
 You now have the preference dataset.
-This process takes a long time. We provide our preference datasets in **'./CSR/inference_csr/CSR-datasets'**.
+This process takes a long time. We provide our preference datasets in huggingface.
 
 ### Step 2. Direct Preference Optimization (DPO). 
 
@@ -135,6 +135,11 @@ python ./scripts/merge_lora_weights.py --model-path "your LoRA checkpoint path" 
 ```
 
 ## Data and Models
+| Dataset                    |                           Download                           |
+| :----------------------- | :----------------------------------------------------------: |
+| CSR_iter0     | 🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter0) |
+| CSR_iter1 | 🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter1) |
+| CSR_iter2      |   🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter2) |
 
 ## Evaluation
 Here are two convenient ways to perform evaluations:
