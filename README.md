@@ -1,5 +1,5 @@
 # Calibrated Self-Rewarding Vision Language Models
-[Yiyang Zhou](https://yiyangzhou.github.io/)\*, [Zhiyuan Fan](zhiyuan.fan/)\*, [Dongjie Cheng](https://dongjie-cheng.github.io/)\*, Sihan Yang, [Zhaorun Chen](https://billchan226.github.io/), [Chenhang Cui](https://gzcch.github.io/), [Xiyao Wang](https://si0wang.github.io/), [Yun Li](https://yunliweb.its.unc.edu/people.html#YunLi), [Linjun Zhang](https://linjunz.github.io/), [Huaxiu Yao](https://sites.google.com/view/danicaxiao/home)
+[Yiyang Zhou](https://yiyangzhou.github.io/)\*, [Zhiyuan Fan](https://zhiyuan.fan/)\*, [Dongjie Cheng](https://dongjie-cheng.github.io/)\*, Sihan Yang, [Zhaorun Chen](https://billchan226.github.io/), [Chenhang Cui](https://gzcch.github.io/), [Xiyao Wang](https://si0wang.github.io/), [Yun Li](https://yunliweb.its.unc.edu/people.html#YunLi), [Linjun Zhang](https://linjunz.github.io/), [Huaxiu Yao](https://sites.google.com/view/danicaxiao/home)
 
 <div align="center">
 </div>
