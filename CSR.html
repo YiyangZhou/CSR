@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Calibrated Self-Rewarding Vision Language Models">
+  <meta name="keywords" content="Calibrated Self-Rewarding, Large Vision-Language Models, Modality Alignment">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Calibrated Self-Rewarding Vision Language Models</title>
+
+  <link rel="icon" href="./assets/csr.jpg">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://yiyangzhou.github.io/">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+      </a>
+      <a class="navbar-item" href="https://x.com/AiYiyangZ/">
+        <span class="icon">
+            <i class="fab fa-twitter"></i>
+        </span>
+      </a>
+      <a class="navbar-item" href="https://www.linkedin.com/in/yiyang-zhou-1bb05829a">
+        <span class="icon">
+            <i class="fas fa-linkedin"></i>
+        </span>
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/YiyangZhou/LURE">
+            <b>LURE</b> <p style="font-size:18px; display: inline; margin-left: 5px;"></p>
+          </a>
+          <a class="navbar-item" href="https://github.com/YiyangZhou/POVID">
+            <b>POVID</b> <p style="font-size:18px; display: inline; margin-left: 5px;"></p>
+          </a>
+          <a class="navbar-item" href="https://github.com/gzcch/Bingo">
+            <b>Bingo</b> <p style="font-size:18px; display: inline; margin-left: 5px;"></p>
+          </a>
+          <a class="navbar-item" href="https://github.com/X-PLUG/mPLUG-Owl">
+            <b>mplugOwl</b> <p style="font-size:18px; display: inline; margin-left: 5px;"></p>
+          </a>
+          <a class="navbar-item" href="https://github.com/UCSC-VLAA/vllm-safety-benchmark">
+            <b>Unicorn</b> <p style="font-size:18px; display: inline; margin-left: 5px;"></p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+
+            <span>Calibrated Self-Rewarding Vision Language Models</span>
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yiyangzhou.github.io/">Yiyang Zhou</a>*<sup style="color:#005587;">1</sup>,</span>
+            <span class="author-block">
+              <a href="https://zhiyuan.fan/">Zhiyuan Fan</a>*<sup style="color:#066221;">5</sup>,</span>
+            <span class="author-block">
+              <a href="https://dongjie-cheng.github.io/">Dongjie Cheng</a>*<sup style="color:#066221;">5</sup>,
+            </span>
+            <span class="author-block">
+              <a href=None>Sihan Yang</a><sup style="color:#066221">5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://billchan226.github.io/">Zhaorun Chen</a><sup style="color:#FDB515">2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://gzcch.github.io/">Chenhang Cui</a><sup style="color:#066221">5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://si0wang.github.io/">Xiyao Wang</a><sup style="color:#8C1515;">3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yunliweb.its.unc.edu/people.html#YunLi">Yun Li</a><sup style="color:#005587">1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://linjunz.github.io/">Linjun Zhang</a><sup style="color:#d7237d">4</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/danicaxiao/home">Huaxiu Yao</a><sup style="color:#005587">1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup style="color:#005587;">1</sup>UNC-Chapel Hill,</span><br>
+            <span class="author-block"><sup style="color:#FDB515">2</sup>University of Chicago,</span>
+            <span class="author-block"><sup style="color:#8C1515">3</sup>University of Maryland,</span>
+            <span class="author-block"><sup style="color:#d7237d">4</sup>Rutgers University,</span>
+            <span class="author-block"><sup style="color:#066221">5</sup>Independent Researcher</span><br>
+            <span class="paper-block"><b >* Equal Contribution</b> </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2405.14622"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2405.14622"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/YiyangZhou/CSR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/charlesdj"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">🤗</p>
+                  </span>
+                  <span>Hugging Face</span>
+                </a>
+              </span>
+              <!-- Twitter Link. -->
+              <span class="link-block">
+                <a href="https://x.com/HuaxiuYaoML/status/1794203052116680895"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">🐦</p>
+                  </span>
+                  <span>Twitter</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="content has-text-centered">
+      <img src="assets/framework.png" alt="geometric reasoning" width="100%"/>
+      <p> 
+        The CSR framework operates an iterative process of preference data generation and learning. During preference data generation, CSR utilizes a sentence-level beam search approach to construct responses sentence by sentence, assigning a reward to each sentence. This reward, initially generated by the model itself, is then calibrated using image-relevance information. Preferences are determined based on the cumulative reward for each response. In each iteration, CSR generates new preference data and performs preference learning based on this data, continuously enhancing the model's performance.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Introduction -->
+<section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          Existing methods use additional models or human annotations to curate preference data and enhance modality alignment through preference optimization. These methods are resource-intensive and may not effectively reflect the target LVLM's preferences, making the curated preference data easily distinguishable. To address these challenges, we proposes the  <b>C</b>alibrated  <b>S</b>elf-<b>R</b>ewarding (<b>CSR</b>), which enables the model to self-improve by iteratively generating candidate responses, evaluating the reward for each response, and curating preference data for fine-tuning. In reward modeling, a step-wise strategy is adopted, and visual constraints are incorporated into the self-rewarding process to emphasize visual input.
+        </div>
+        <p align="center">
+          <img src="assets/csr_llava.png" width="90%"> <br>
+         Left: Different parameter sizes of LLaVA 1.5 can enhance their learning through CSR iterations. Right: The change in image relevance scores before and after employing CSR.
+      </p>
+        <div class="content has-text-justified">
+          Through the online CSR process, the model continuously enhances its performance across various benchmarks and improves the overall relevance scores of its responses to visual inputs. Additionally, it reduces the gap between rejected responses and chosen responses, thereby improving the model's performance lower bound.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- @PAN TODO: bibtex -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+
+    <pre><code>@article{zhou2024calibrated,
+      title={Calibrated Self-Rewarding Vision Language Models},
+      author={Zhou, Yiyang and Fan, Zhiyuan and Cheng, Dongjie and Yang, Sihan and Chen, Zhaorun and Cui, Chenhang and Wang, Xiyao and Li, Yun and Zhang, Linjun and Yao, Huaxiu},
+      journal={arXiv preprint arXiv:2405.14622},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+<section>
+  <div class="section" id="org-banners" style="display:flex">
+    <a href="https://www.unc.edu/" target="_blank" rel="external">
+      <img class="center-block org-banner" src="assets/UNC-Logo.png" style="max-width: 200px; height: auto;">
+  </a>
+  <a href="https://www.uchicago.edu/" target="blank" class="ext-link">
+      <img class="center-block org-banner" src="assets/uchi_logo.png" style="max-width: 200px; height: auto;">
+  </a>
+  <a href="https://umd.edu/" target="_blank" rel="external">
+      <img class="center-block org-banner" src="assets/University-of-Maryland-Logo.png" style="max-width: 200px; height: auto;">
+  </a>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
+
+</body>
+</html>
