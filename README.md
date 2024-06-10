@@ -142,7 +142,7 @@ We provide CSR training data and model weights on HuggingFace.
 | CSR-iter1 | 🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter1) | CSR-7B-iter2 | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_2Iteration) | CSR-13B-iter2 | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_2Iteration) |
 | CSR-iter2      |   🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter2) | CSR-7B-iter3  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_3Iteration) | CSR-13B-iter3  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_3Iteration) |
 
-The prompt dataset and the mapping file between llava and hf-llava are available in **'./CSR/inference_csr/data'**.
+The prompt dataset and mapping files between llava and hf-llava are available in **'./CSR/inference_csr/data'**.
 Please refer to the [Instruction](#Instruction) for usage.
 
 
