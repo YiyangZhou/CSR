@@ -135,7 +135,7 @@ python ./scripts/merge_lora_weights.py --model-path "your LoRA checkpoint path" 
 ```
 
 ## Data and Models
-We provide CSR training data and model weights on HuggingFace.
+We provide CSR training data and model weights on HuggingFace. Please refer to the [Instruction](#Instruction) for usage.
 | Dataset                    |                           Download                           | Model (7B)                     |                           Download                           | Model (13B)                     |                           Download                           |
 | :----------------------- | :----------------------------------------------------------: | :------------------------ | :----------------------------------------------------------: | :------------------------ | :----------------------------------------------------------: |
 | CSR-iter0     | 🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter0) | CSR-7B-iter1  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_1Iteration) | CSR-13B-iter1  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_1Iteration) |
@@ -143,7 +143,7 @@ We provide CSR training data and model weights on HuggingFace.
 | CSR-iter2      |   🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter2) | CSR-7B-iter3  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_3Iteration) | CSR-13B-iter3  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_3Iteration) |
 
 The prompt dataset and mapping files between llava and hf-llava are available in **'./CSR/inference_csr/data'**.
-Please refer to the [Instruction](#Instruction) for usage.
+
 
 
 ## Evaluation
