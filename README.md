@@ -10,7 +10,7 @@
 </div>
 
 
-[[Project page](https://csr.github.io/)]
+[[Project page](https://dongjie-cheng.github.io/CSR.html)]
 
 **Citation**: If you find this repo useful for your research, please consider citing the paper
 ```
