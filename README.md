@@ -14,13 +14,11 @@
 
 **Citation**: If you find this repo useful for your research, please consider citing the paper
 ```
-@misc{zhou2024calibrated,
-      title={Calibrated Self-Rewarding Vision Language Models}, 
-      author={Yiyang Zhou and Zhiyuan Fan and Dongjie Cheng and Sihan Yang and Zhaorun Chen and Chenhang Cui and Xiyao Wang and Yun Li and Linjun Zhang and Huaxiu Yao},
-      year={2024},
-      eprint={2405.14622},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@article{zhou2024calibrated,
+  title={Calibrated Self-Rewarding Vision Language Models},
+  author={Zhou, Yiyang and Fan, Zhiyuan and Cheng, Dongjie and Yang, Sihan and Chen, Zhaorun and Cui, Chenhang and Wang, Xiyao and Li, Yun and Zhang, Linjun and Yao, Huaxiu},
+  journal={arXiv preprint arXiv:2405.14622},
+  year={2024}
 }
 ```
 
