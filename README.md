@@ -138,9 +138,9 @@ python ./scripts/merge_lora_weights.py --model-path "your LoRA checkpoint path" 
 We provide CSR training data and model weights on HuggingFace.
 | Dataset                    |                           Download                           | Model (7B)                     |                           Download                           | Model (13B)                     |                           Download                           |
 | :----------------------- | :----------------------------------------------------------: | :------------------------ | :----------------------------------------------------------: | :------------------------ | :----------------------------------------------------------: |
-| CSR_iter0     | 🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter0) | CSR-7B-iter1  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_1Iteration) | CSR-13B-iter1  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_1Iteration) |
-| CSR_iter1 | 🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter1) | CSR-7B-iter2 | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_2Iteration) | CSR-13B-iter2 | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_2Iteration) |
-| CSR_iter2      |   🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter2) | CSR-7B-iter3  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_3Iteration) | CSR-13B-iter3  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_3Iteration) |
+| CSR-iter0     | 🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter0) | CSR-7B-iter1  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_1Iteration) | CSR-13B-iter1  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_1Iteration) |
+| CSR-iter1 | 🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter1) | CSR-7B-iter2 | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_2Iteration) | CSR-13B-iter2 | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_2Iteration) |
+| CSR-iter2      |   🤗 [HuggingFace](https://huggingface.co/datasets/charlesdj/CSR-12K-iter2) | CSR-7B-iter3  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_7b_3Iteration) | CSR-13B-iter3  | 🤗 [HuggingFace](https://huggingface.co/charlesdj/CSR_LLaVA_1.5_13b_3Iteration) |
 
 Please refer to the [Instruction](#Instruction) for usage.
 
