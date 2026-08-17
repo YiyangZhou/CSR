@@ -1,3 +1,5 @@
+
+
 # Calibrated Self-Rewarding Vision Language Models
 [Yiyang Zhou](https://yiyangzhou.github.io/)\*, [Zhiyuan Fan](https://zhiyuan.fan/)\*, [Dongjie Cheng](https://dongjie-cheng.github.io/)\*, Sihan Yang, [Zhaorun Chen](https://billchan226.github.io/), [Chenhang Cui](https://gzcch.github.io/), [Xiyao Wang](https://si0wang.github.io/), [Yun Li](https://yunliweb.its.unc.edu/people.html#YunLi), [Linjun Zhang](https://linjunz.github.io/), [Huaxiu Yao](https://www.huaxiuyao.io/)
 
@@ -107,7 +109,7 @@ Before starting, you need to:
 (3) Download the image data from the [COCO website](https://cocodataset.org/#download) into **'./data/images/'**(or you can prepare your own images and prompt data).
 
 ### Step 1. Construct Preference Data. 
-First, prepare the COCO-2014 train images in the **'./data/images/'**. Then complete the following steps in sequence.
+First, prepare the COCO-2014 train images in the **'./data/images/train2014'**. Then complete the following steps in sequence.
 ```Shell
 cd ./CSR/inference_csr
 bash ./step1.sh
